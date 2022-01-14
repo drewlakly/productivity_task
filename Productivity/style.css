@@ -73,3 +73,15 @@ input {
 .bodyish input {
     margin-right: 10%;
 }
+
+.scores {
+    float: left;
+    display: block;
+    overflow: hidden;
+    background-color: white;
+}
+
+.Proficiencies {
+    float: left;
+    background-color: white;
+}
