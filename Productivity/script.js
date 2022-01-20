@@ -1,0 +1,16 @@
+var canvas = document.getElementById('canvas'),
+        ctx = canvas.getContext('2d');
+canvas.width = $('img').width();
+canvas.crossOrigin = "Anonymous";
+canvas.height = $('img').height();
+ctx.drawImage($('img').get(0), 0, 0);
+ctx.font = "36pt Verdana";
+$(document).on('input','#inp',function(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.drawImage($('img').get(0), 0, 0);
+    ctx.fillStyle = "black";
+    ctx.fillText($(this).val(),100,24);
+});
+$('button').click(function(){
+    console.log(ctx.getImageData(50, 50, 100, 100));
+});
